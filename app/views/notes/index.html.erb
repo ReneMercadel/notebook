@@ -1,6 +1,5 @@
 <h1> Notes </h1>
 
-<% @notes.each do |note| %>
-  <p><%= note.title %></p>
-  <p><%= note.content %></p>
-<% end %>
+  <%= render @notes %>
+
+<%= link_to "Create Note", new_note_path %>
